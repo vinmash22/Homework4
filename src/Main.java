@@ -74,7 +74,6 @@ public class Main {
         System.out.println("Задача 6");
         int capasity = 120;
         int sittingPlace = 60;
-        int standingPlace = capasity-sittingPlace;
         int ticketNumber = 121;
         if (ticketNumber > capasity)        {
             System.out.println("Мест нет");
@@ -85,7 +84,7 @@ public class Main {
         }
         else  {
             System.out.println("Номер билета " + ticketNumber + ", стоячее место");
-        }
+         }
         }
     }
     public static void task7() {
