@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -54,15 +55,35 @@ public class Main {
     }
     public static void task5() {
         System.out.println("Задача 5");
-        int age = 14;
-        if (age < 5) {
-            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
-        }
-        if (age >= 5 && age < 14) {
-            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-        }
+        int age = 4;
         if (age >= 14) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
+        else {
+            if (age < 5) {
+                System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
+            }
+            if (age >= 5 && age < 14) {
+                System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+            }
+         }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        int capasity = 120;
+        int sittingPlace = 60;
+        int standingPlace = capasity-sittingPlace;
+        int ticketNumber = 121;
+        if (ticketNumber > capasity)        {
+            System.out.println("Мест нет");
+        }
+            else {
+        if (ticketNumber <= sittingPlace) {
+            System.out.println("Номер билета " + ticketNumber + ", сидячее место");
+        }
+        else  {
+            System.out.println("Номер билета " + ticketNumber + ", стоячее место");
+        }
         }
     }
 }
